@@ -31,6 +31,12 @@ body {
     transform: translateY(-10px);
 }
 
+@media only screen and (max-width: 600px) {
+    .card {
+        width: calc(100% - 40px); /* Карточка будет занимать всю доступную ширину с небольшим отступом */
+    }
+}
+
 .overlay {
     position: absolute;
     top: 0;
