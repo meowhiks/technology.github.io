@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Глобальный Торговый Альянс</title>
+    <style>
+        body {
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url(../Assets/Rome_bg.jpg.crdownload);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+        }
+        .container {
+            width: 60%;
+            margin: 20px auto;
+            background-color: rgb(59, 59, 59, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+        .header h1 {
+            margin: 0;
+        }
+        .national-spirit, .laws-government, .research-production, .military-staff {
+            margin: 20px 0;
+        }
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #fff;
+            padding-bottom: 5px;
+        }
+        .progress-bar {
+            background-color: #555;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        .progress-bar-inner {
+            background-color: #00f;
+            height: 20px;
+            width: 50%;
+        }
+        .ideology {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ideology div {
+            width: 20%;
+            text-align: center;
+        }
+        .ideology .bar {
+            background-color: #000;
+            height: 20px;
+            width: 100%;
+            position: relative;
+        }
+        .ideology .bar::after {
+            content: '';
+            position: absolute;
+            height: 20px;
+            background-color: #f00;
+            width: 50%;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .icon {
+            background-color: #555;
+            border-radius: 5px;
+            margin: 10px;
+            width: 70px;
+            height: 70px;
+            position: relative;
+            cursor: pointer;
+        }
+        .description {
+            display: none;
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 80px;
+            left: 10px;
+            width: 200px;
+        }
+        @media screen and (max-width: 600px) {
+            .header img {
+                    width: 50px;
+                    height: 50px;
+            }
+        
+            .header h1 {
+                font-size: 5px;
+            }
+        
+            .h1 {
+                font-size: 20px;
+            }
+            .technology h1 {
+                font-size: 15px;
+            
+            }
+}
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../GTA.png" alt="Лидер">
+            <h1>Глобальный Торговый Альянс</h1>
+        </div>
+        <div class="national-spirit">
+            <div class="section-title">Переход к новой эре:</div>
+            <div class="progress-bar">
+                <div class="progress-bar-inner" style="width: 85%;"></div>
+            </div>
+        </div>
+        <h1 class="txt-techno">Организация:</h1>
+        <div class="technology" style="padding-left: 10px; margin-left: 10px; padding-top: -40px; color: rgb(81, 81, 81) ">
+            <!-- Старое время -->
+            <h1 style="color: yellow"></h1>
+            <div class="earned" style="color: white">
+                <h1>Капитал: 10000🟡</h1>
+                <h1>Влияние: 12%</h1>
+                
+            </div>
+    </div>
+</body>
+</html>
